@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f1d36;
+  min-height: 100vh;
+}
+
+a {
+  position: relative;
+  padding: 10px 30px;
+  margin: 0 15px;
+  color: #21ebff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0003);
+}
+
+a:nth-child(1) {
+  filter: hue-rotate(115deg);
+}
+
+a:nth-child(2) {
+  filter: hue-rotate(270deg);
+}
+
+a:hover {
+  background: #21ebff;
+  color: #111;
+  box-shadow: 0 0 50px #21ebff;
+  transition-delay: 0.2s;
+}
+
+a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #21ebff;
+  border-left: 2px solid #21ebff;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+a:hover:before {
+  width: 98%;
+  height: 96%;
+  transition-delay: 0s;
+}
+
+a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #21ebff;
+  border-right: 2px solid #21ebff;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+a:hover:after {
+  width: 98%;
+  height: 96%;
+  transition-delay: 0s;
+}
+
+.main-text {
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  left: 30%;
+  top: 100px;
+}
+
+.thanks-text {
+  position: absolute;
+  position: absolute;
+  bottom: 50px;
+  left: 36%;
+  color: #fff;
+}
+
+.bilal {
+  position: absolute;
+  bottom: 20px;
+  left: 42%;
+  color: #fff;
+}
+
+.bilal:hover {
+  color: #21ebff;
+}
